@@ -30,6 +30,10 @@ After item definition is ready, OpenHAB reads every 15 seconds CO2 value from de
 ```
 Text item=co2PPM
 ```
+After successfull definition OpenHAB GUI shows simple text item:
+
+![alt](/images/oh.png?raw=true)
+
 ## Case
 In openscad directory can be found simple case for whole device. There is OpenSCAD source file as well as rendered STL model.
 
