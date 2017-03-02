@@ -14,7 +14,7 @@ Board is designed as single-sided with some wire jumpers.
 
 ## Firmware
 
-Firmware can be programmed via Arduino IDE. After device startup MH-Z19 sensor returns different values before it is heated up. Firmware first waits for sequence of 400PPM readings and after that for value different than 400PPM; then is sensor neated up and ready for measuring.
+Firmware can be programmed via Arduino IDE. After device startup MH-Z19 sensor returns different values before it is heated up. Firmware first waits for sequence of 400PPM readings and after that for value different than 400PPM; then is sensor heated up and ready for measuring.
 
 WIFI access point and network parameters can be set in source code. After device startup and sensor heated up is on his IP address available HTTP server, which provides measured CO2 PPM value as REST service. Via HTTP server is also available simple configuration page where some parameters can be changed.
 
