@@ -1,0 +1,2 @@
+
+Simple enclosure for sensor.
