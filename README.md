@@ -1,6 +1,6 @@
 # OpenHAB CO2 sensor
 
-This repository contains Cadsoft's Eagle schematic and PCBs as well as Arduino firmware for CO2 monitoring device based on ESP8266-01 and relatively cheap CO2 sensor MH-Z19. Meter is designed to be powered from USB charger.
+This repository contains Cadsoft's Eagle schematic and PCBs as well as Arduino firmware for CO2 monitoring device based on ESP8266-01 and relatively cheap CO2 sensor MH-Z19. Device is designed to be powered from USB charger.
 
 ## Schematic & PCB
 
@@ -18,7 +18,7 @@ Firmware can be programmed via Arduino IDE. After device startup MH-Z19 sensor r
 
 WIFI access point and network parameters can be set in source code. After device startup and sensor heated up is on his IP address available HTTP server, which provides measured CO2 PPM value as REST service. Via HTTP server is also available simple configuration page where some parameters can be changed.
 
-Sensor is very sensitive so firmware averages 50 values (by default). Number of values, frequency of reading values from sensor and other parameters can be set in source file or via WEB configuration page after device starts.
+Sensor is very sensitive so firmware averages 50 values (by default) for eliminate jitter. Number of averaged values, frequency of reading values from sensor and other parameters can be set in source file or via WEB configuration page.
 
 ## OpenHAB
 
@@ -33,3 +33,8 @@ Text item=co2PPM
 ## Case
 In openscad directory can be found simple case for whole device. There is OpenSCAD source file as well as rendered STL model.
 
+![alt](/openscad/case.png?raw=true)
+
+## Some images
+![alt](/images/2017-03-01%2017.21.12.jpg?raw=true)
+![alt](/images/2017-03-02%2016.58.54.jpg?raw=true)
