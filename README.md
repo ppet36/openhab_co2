@@ -18,7 +18,12 @@ Firmware can be programmed via Arduino IDE. After device startup MH-Z19 sensor r
 
 WIFI access point and network parameters can be set in source code. After device startup and sensor heated up is on his IP address available HTTP server, which provides measured CO2 PPM value as REST service. Via HTTP server is also available simple configuration page where some parameters can be changed.
 
-Sensor is very sensitive so firmware averages 50 values (by default) for eliminate jitter. Number of averaged values, frequency of reading values from sensor and other parameters can be set in source file or via WEB configuration page.
+Sensor is very sensitive so firmware averages 50 values (by default) for eliminate jitter. Number of averaged values, frequency of reading values from sensor and other parameters can be set in source file or via WEB configuration page. Configuration page is written in very primitive HTML so can be accessed for example from terminal browser; for example "links":
+
+```
+links http://192.168.128.209/
+```
+![alt](/images/admin.png)
 
 ## OpenHAB
 
